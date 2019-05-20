@@ -7,17 +7,31 @@
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+	<div id="page">
 	<header>
-		<!--Logo va aqui -->
+		<aside id="menuLado" role="complementary" class="border js-fullheight">
+		<h1 ><a href="index.html"><img id="logo" src="img/marioBrs.jpg" alt="Mario Bros"></a></h1>
 
 
 		<!-- Barrita de navegacion	-->
-		<div id="nav">
-			<a href="">Homepage</a>
-			<a href="">Libreria</a>
-			<a href="">Mi Cuenta</a>
-			<button id="log" onclick="login()" >Login</button>
-		</div>
+		<nav id="mainMenu" role="navigation"> 
+			<ul>
+				<li class="active"><a href="">Homepage</a></li>
+				<li><a href="">Libreria</a></li>
+				<li><a href="">Mi Cuenta</a></li>
+				<li><button id="log" onclick="login()" >Login</button></li>
+			</ul>
+		</nav>
+
+		<div class="footer">
+				<p><small> Suscripcion a Videojuegos 2019</span> <span>Diseñado por <a href="http:" target="_blank">Videojuegos Suscripcion</a> </span> 
+				<ul>
+					<li><a href="#"><i class="icon"><img class="icon" src="img/facebook.png"></i></a></li>
+					<li><a href="#"><i class="icon"><img class="icon" src="img/instagram.png"></i></a></li>
+					<li><a href="#"><i class="icon"><img class="icon" src="img/linkedin.png"></i></a></li>
+					<li><a href="#"><i class="icon"><img class="icon" src="img/twitter.png"></i></a></li>
+				</ul>
+			</div>
 
 		<div id="login" class="login">
   			<form class="contenido">
@@ -37,18 +51,20 @@
     			</div>
  			</form>
 		</div>
-		
+		</aside>
 	</header>
 	<main>
+
+
+
+		
 		
 	</main>
 	<footer>
 		<!-- pie de pagina	-->
-		<div id="footer">
-			
-		</div>
-		
+				
 	</footer>
+	</div>
 </body>
 
 </html>
