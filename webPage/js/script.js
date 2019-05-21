@@ -1,4 +1,4 @@
-function login() {
+/*function login() {
 	document.getElementById("login").style.display="block";
 }
 
