@@ -1,6 +1,6 @@
 JUEGOS DE ROL
 
-Titulo: Borderlans 2
+Titulo: Borderlands 2
 Genero: Rol, Accion, Shooter
 Desarrollador: Gearbox Software
 PEGI: 18 (Lenguaje y violencia)
@@ -39,7 +39,7 @@ Genero: Carreras, Deportes
 Desarrollador: Codemasters
 PEGI: 3
 
-Titulo: Rocket Leaque
+Titulo: Rocket League
 Genero: Carreras, Deportes, Accion
 Desarrollador: Psyonix, Inc
 PEGI: 3 (Interactividad Enlinea)
