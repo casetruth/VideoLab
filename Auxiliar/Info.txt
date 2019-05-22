@@ -1,0 +1,142 @@
+JUEGOS DE ROL
+
+Titulo: Borderlans 2
+Genero: Rol, Accion, Shooter
+Desarrollador: Gearbox Software
+PEGI: 18 (Lenguaje y violencia)
+
+Titulo: Monster Hunter: World
+Genero: Rol, Accion
+Desarrollador: CAPCOM
+PEGI: 16 (Violencia)
+
+Titulo: The Elder Scrolls V: Skyrim
+Genero: Rol
+Desarrollador: Bethesda Game Studios
+PEGI: 18 (Violencia)
+
+Titulo: Tabletop Simulator
+Genero: Rol, Estrategia
+Desarrollador: Berserk Game
+PEGI: None
+
+Titulo: Stardew Valley
+Genero: Rol
+Desarrollador: ConcernedApe
+PEGI: 7 (Leve violencia)
+
+------------------------------
+
+JUEGOS DE CARRERAS
+
+Titulo: GRID Autosport
+Genero: Carreras, Deportes
+Desarrollador: Codemasters Racing
+PEGI: 3
+
+Titulo: DIRT Rally 2.0
+Genero: Carreras, Deportes
+Desarrollador: Codemasters
+PEGI: 3
+
+Titulo: Rocket Leaque
+Genero: Carreras, Deportes, Accion
+Desarrollador: Psyonix, Inc
+PEGI: 3 (Interactividad Enlinea)
+
+Titulo: Trackmania Stadium
+Genero: Carreras
+Desarrollador: Nadeo
+PEGI: 3
+
+Titulo: FlatOut
+Genero: Carreras
+Desarrollador: Bugbear Entertaiment
+PEGI: None
+
+------------------------------------
+
+JUEGOS DE DEPORTES
+
+Titulo: Golf It!
+Genero: Deportes
+Desarrollador: Perfuse Entertaiment
+PEGI: None
+
+Titulo: Football Manager 2019
+Genero: Deportes, Estrategia
+Desarrollador: Sports Interactive
+PEGI: 3
+
+Titulo: King of Dirt
+Genero: Deportes, Carreras
+Desarrollador: WildLabs
+PEGI: 3
+
+Titulo: NBA 2K19
+Genero: Deportes
+Desarrollador: Visual Concepts
+PEGI: 3
+
+Titulo: Skate XL
+Genero: Deportes
+Desarrollador: Easy Day Studios Pty Ltd
+PEGI: None
+
+--------------------------------
+
+JUEGOS DE ACCION
+
+Titulo: Grand Theft Auto V
+Genero: Accion, Aventura, Shooter
+Desarrollador: Rockstar North
+PEGI: 18 (Lenguaje fuerte y violencia)
+
+Titulo: American Fugitive
+Genero: Accion, Aventura
+Desarrollador: Fallen Tree Game Ltd
+PEGI: None
+
+Titulo: Mordhau
+Genero: Accion
+Desarrollador: Triternion
+PEGI: None
+
+Titulo: Tom Clancy's Rainbow Six Siege
+Genero: Accion, Shooter, Estrategia
+Desarrollador: Ubisoft Montreal
+PEGI: 18
+
+Titulo: Shadow Of The Tomb Raider
+Genero: Accion, Aventura
+Desarrollador: Eidos-Montreal
+PEGI: 18 (Lenguaje fuerte y violencia)
+
+-----------------------------------------
+
+JUEGOS DE ESTRATEGIA
+
+Titulo: Factorio
+Genero: Estrategia
+Desarrollador: Wube Software LTD
+PEGI: None
+
+Titulo: Surviving Mars
+Genero: Estrategia
+Desarrollador: Haemimont Games
+PEGI: 7 (Leve violencia)
+
+Titulo: Total War: WARHAMMER
+Genero: Estrategia, Accion
+Desarrollador: CREATIVE ASSAMBLY
+PEGI: 16 (Violencia)
+
+Titulo: Sid Meie's Civilization VI
+Genero: Estrategia
+Desarrollador: Firaxis Games
+PEGI: 12 (Violencia)
+
+Titulo: TABS: Totally Accurate Battle Simulator
+Genero: Estrategia
+Desarrollador: Landfall
+PEGI: None
