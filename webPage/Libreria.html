@@ -35,35 +35,30 @@
 			</div>
 		</aside>
 	</header>
-	<main>
+	<main onload="buscar();">
 		<div id=main >
-<div class="carousel-caption">
-                <h2>Qué es GamerLab?</h2>
-                <p>Te da acceso a una libreria de  <strong>Videojuegos</strong></p>
-                <div class="filter-box">
-                    <form action="http://www.google.com/" class="banner-filter-box" method="get">
-                       
-                            <label class="sr-only" for="keywords"></label>
-                            <input class="form-control" placeholder="Buscar por Keyword" id="keywords" name="keywords" type="text">
-             			                  
-                        
-                            <select name="category" id="category" class="form-control">
-                                <option>Genero</option>
-                                <option>Accion</option>
-                                <option>Carreras</option>
-                                <option>Deportes</option>
-                                <option>Estrategia</option>
-                                <option>Rol</option>
-                            </select>
-                            <fieldset>
-                            	
-                            	
-                            </fieldset>
-                       
-                        
-                        <input class="form-control" type="submit" value="Search"></div>
-                    </form>
+				<div class="carousel-caption">
+					<label>Genero:</label>
+                	<select id="genre" onchange="buscar();">
+						<option value="All">Todos</option>
+ 						<option value=" Accion">Accion</option>
+  						<option value=" Carreras">Carreras</option>
+  						<option value=" Deportes">Deportes</option>
+  						<option value=" Estrategia">Estrategias</option>
+  						<option value=" Shooter">Shooter</option>
+  						<option value=" Rol">Rol</option>
+					</select>
+
+					<div class="barraBusc">
+   						<form>
+    						<input type="text" placeholder="Busqueda..." name="buscar">
+      						<button type="submit"><img class="icon" src="img/Lupa.jpg"></img></button>
+   						</form>
+  					</div> 
                 </div>
+                <div id="libreria">	
+                </div>
+
             </div>
 		</div>
 		</div>
