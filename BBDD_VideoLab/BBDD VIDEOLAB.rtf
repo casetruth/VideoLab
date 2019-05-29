@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;\red217\green217\blue217;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang10 Creaci\'f3n de la base de datos VIDEOLAB:\par
+
+\pard\sl240\slmult1\cf1\highlight2\b0\f1\fs26 CREATE SCHEMA VIDEOLAB;\par
+USE VIDEOLAB;\par
+
+\pard\sl240\slmult1\tx1140\tab\par
+
+\pard\sl240\slmult1 CREATE TABLE LIBRERIA (\par
+\tab idVIDEOJUEGO VARCHAR(45)PRIMARY KEY,\par
+    \tab TITULO VARCHAR(50),\par
+    \tab GENERO VARCHAR(45),\par
+    \tab DESCRIPCION VARCHAR(250),\par
+    \tab DESARROLLADOR VARCHAR(45),\par
+\tab PEGI VARCHAR(100)\par
+);\par
+\par
+CREATE TABLE SUSCRIPCION (\par
+\tab idUSUARIO CHAR(9)PRIMARY KEY,\par
+\tab NUMERO VARCHAR(45),\par
+\tab FECHA_ALTA DATE,\par
+\tab FECHA_BAJA DATE,\par
+\tab TIPO EDAD VARCHAR(45),\par
+\tab DESCARGAS VARCHAR(45)\par
+);\par
+\par
+CREATE TABLE TARJETA_CREDITO (\par
+\tab idUSUARIO CHAR(9)PRIMARY KEY,\par
+\tab NUMERO CHAR(45),\par
+    \tab FECHA_CADUCIDAD DATE,\par
+    \tab CCV INT(45),\par
+    \tab TIPO VARCHAR(45)\par
+);\par
+\par
+CREATE TABLE USUARIO (\par
+\tab idUSUARIO CHAR(9)PRIMARY KEY,\par
+\tab NOMBRE VARCHAR(45),\par
+    \tab DIRECCION VARCHAR(100),\par
+    \tab EDAD VARCHAR (3),\par
+\tab EMAIL VARCHAR(50),\par
+    \tab NOMBRE_USUARIO VARCHAR(50),\par
+    \tab CONTRASE\'d1A VARCHAR(25)\cf3\par
+\cf1 )\par
+
+\pard\sa200\sl276\slmult1\cf0\highlight0\f0\fs22\par
+\b A\'f1adir registros\par
+
+\pard\sl276\slmult1\highlight2\b0\f1\fs26 INSERT INTO \cf1 VIDEOLAB\cf0 .\cf1 LIBRERIA \cf0 (\cf1 idVIDEOJUEGO \cf0 , \cf1 TITULO\cf0 , \cf1 GENERO\cf0 , \cf1 DESCRIPCION, DESARROLLADOR, PEGI\cf0 ) \par
+VALUES ('1', 'Monster Hunter: World', 'Rol, Accion', 'Es un videojuego perteneciente al g\'e9nero de rol y acci\'f3n, siendo el sexto t\'edtulo principal de la franquicia de videojuegos Monster Hunter', 'CAPCOM', '16 (Violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('2', 'Borderlands 2', 'Rol, Accion, Shooter', 'Borderlands 2 es un videojuego de disparos en primera persona con elementos de rol, se trata de la secuela del videojuego de 2009, Borderlands', 'Gearbox Software', '18 (Lenguaje y violencia)');\par
+
+\pard\fi708\sl276\slmult1\par
+
+\pard\sl276\slmult1 INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('3', 'The Elder Scrolls V: Skyrim', 'Rol', 'Es un ARPG del tipo mundo abierto.  Es la quinta entrega de videojuegos de acci\'f3n y fantas\'eda de la serie The Elder Scrolls', 'Bethesda Game Studios', '18 (Violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('4', 'Tabletop Simulator', 'Rol, Estrategia', 'El simulador de mesa en el que puedes dejar salir tu agresi\'f3n volteando la mesa. No hay reglas a seguir: solo t\'fa, un recinto de seguridad f\'edsica y tus amigos', 'Berserk Game', 'None');\par
+
+\pard\sa200\sl276\slmult1\highlight0\b\f0\fs22\par
+
+\pard\sl276\slmult1\highlight2\b0\f1\fs26 INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('5', 'Stardew Valley', 'Rol', 'Es un videojuego indie de simulaci\'f3n de granja desarrollado. El jugador toma el rol de un personaje que se encuentra atrapado en un trabajo de oficina, para escapar de \'e9l se va a vivir a la granja de su abuelo, la cual se encuentra en ruinas', 'ConcernedApe', '7 (Leve violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('6', 'GRID Autosport', 'Carreras, Deportes', 'Se trata de los equipos, los rivales y la carrera a medida que se convierte en piloto de alquiler, se especializa en sus disciplinas favoritas o las conquista en un mundo intenso de automovilismo profesional', 'Codemasters Racing', '3');\par
+
+\pard\fi708\sl276\slmult1\par
+
+\pard\sl276\slmult1 INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('7', 'DIRT Rally 2.0', 'Carreras, Deportes', 'Juego que te reta a abrirte camino a trav\'e9s de una selecci\'f3n de ubicaciones de rally ic\'f3nicas por todo el mundo, en los veh\'edculos todoterreno m\'e1s potentes de la historia, teniendo en cuenta que el menor de los fallos puede poner fin a tu carrera', 'Codemasters', '3');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('8', 'Rocket League', 'Carreras, Deportes, Accion', 'Es un videojuego que combina el f\'fatbol con los veh\'edculos. Se encuentra disponible en espa\'f1ol, tiene modos de juego cooperativo, de un jugador y en l\'ednea', 'Psyonix, Inc', '3 (Interactividad Enlinea)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('9', 'Trackmania Stadium', 'Carreras', 'Videojuego en el que se pueden crear circuitos alocados para participar en competiciones fren\'e9ticas. La clave de este juego es que sus mec\'e1nicas son muy sencillas de aprender, por lo que la clave estar\'e1 en dominarlas', 'Nadeo', '3');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('10', 'FlatOut', 'Carreras', 'Es un videojuego de carreras, sit\'faa enfasis en los derby de demolici\'f3n y un complejo motor f\'edsico. Incluye 16 autos diferentes, todos con 5 diferentes capas de pintura. El juego es m\'e1s conocido por los conductores que salen volando por el parabrisas', 'Bugbear Entertaiment', 'None');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('11', 'Golf It!', 'Deportes', 'Es un juego de minigolf multijugador que se centra en una experiencia multijugador din\'e1mica, divertida y creativa', 'Perfuse Entertaiment', 'None');\par
+\highlight0\f0\fs22\par
+\highlight2\f1\fs26 INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('12', 'Football Manager 2019', 'Deportes, Estrategia', 'Crea tu propia historia futbol\'edstica asumiendo el mando del club de tus sue\'f1os. El control absoluto en este juego incre\'edblemente realista es tuyo: tienes en tu mano el poder de decidir o de delegar', 'Sports Interactive', '3');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('13', 'King of Dirt', 'Deportes, Carreras', 'King of Dirt es en realidad el mejor juego de BMX. \'bfQuieres toneladas de adrenalina y muchas impresiones excepcionales? \'bfSue\'f1as con realizar Backflips, Supermans y una enorme cantidad de otros trucos incre\'edbles?', 'WildLabs', '3');\par
+\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('14', 'NBA 2K19', 'Deportes', 'NBA 2K cumple 20 a\'f1os redefiniendo los juegos de deporte, con los mejores gr\'e1ficos, las mec\'e1nicas m\'e1s realistas, modos de juego innovadores y un entorno abierto cautivador', 'Visual Concepts', '3');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('15', 'Skate XL', 'Deportes', 'Skater XL es una evoluci\'f3n en los juegos de skate. Experimenta el control y la capacidad de respuesta de la placa sin igual mientras patina los legendarios puntos de patinaje del mundo real', 'Easy Day Studios Pty Ltd', 'None');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('16', 'Grand Theft Auto V', 'Accion, Aventura, Shooter', 'Los Santos es una ciudad de brillantes luces, largas noches y sucios secretos, especialmente en GTA Online: After Hours. La fiesta empieza ya', 'Rockstar North', '18 (Lenguaje fuerte y violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('17', 'American Fugitive', 'Accion, Aventura', 'Una versi\'f3n moderna de los cl\'e1sicos sandbox de acci\'f3n. Te han acusado injustamente de la muerte de tu padre y tendr\'e1s que hacer todo lo posible para encontrar al verdadero culpable', 'Fallen Tree Game Ltd', 'None');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('18', 'Mordhau', 'Accion', 'Es un slasher medieval multijugador. Crea tu mercenario y lucha en batallas brutales en las que experimentar\'e1s combates de ritmo r\'e1pido, asedios a castillos, cargas de caballer\'eda y m\'e1s', 'Triternion', 'None');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('19', 'Tom Clancy's Rainbow Six Siege', 'Accion, Shooter, 'Es un videojuego de disparos en primera persona t\'e1ctico multijugador. Es el nuevo lanzamiento del shooter m\'e1s aclamado de estos tiempos', 'Ubisoft Montreal', '18');\par
+
+\pard\fi708\sl276\slmult1\par
+
+\pard\sl276\slmult1 INSERT INTO \cf1 LIBRERIA \cf0 VALUES \par
+('20', 'Shadow Of The Tomb Raider', 'Accion, Aventura', 'Mientras Lara Croft trata de salvar el mundo de un apocalipsis maya, deber\'e1 convertirse en la saqueadora de tumbas que est\'e1 destinada a ser', 'Eidos-Montreal', '18 (Lenguaje fuerte y violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('21', 'Factorio', 'Estrategia', 'Factorio es un juego sobre la construcci\'f3n y la creaci\'f3n de f\'e1bricas automatizadas para producir art\'edculos de complejidad creciente, dentro de un mundo 2D infinito. Usa tu imaginaci\'f3n para dise\'f1ar tu f\'e1brica', 'Wube Software LTD', 'None');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('22', 'Surviving Mars', 'Estrategia', 'Bienvenido a casa! \'a1Ha llegado la hora de tomar posesi\'f3n del Planeta Rojo y construir las primeras colonias humanas activas en Marte!', 'Haemimont Games', '7 (Leve violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('23', 'Total War: WARHAMMER', 'Estrategia, Accion', 'El clamor de interminables batallas resuena en el Viejo Mundo. \'a1La guerra es la \'fanica constante!', 'CREATIVE ASSAMBLY', '16 (Violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('24', 'Sid Meie's Civilization VI', 'Estrategia', 'Juega como uno de los 20 l\'edderes hist\'f3ricos, incluido Felipe II.', 'Firaxis Games', '12 (Violencia)');\par
+\par
+INSERT INTO \cf1 LIBRERIA \cf0 VALUES\par
+('25', 'TABS: Totally Accurate Battle Simulator', 'Estrategia', 'Es un juego de t\'e1cticas basado en la f\'edsica. Experimenta la guerra precisa a trav\'e9s de las edades. Utiliza la simulaci\'f3n basada en la f\'edsica para proporcionar una visi\'f3n nunca antes vista de las grandes batallas de la historia', 'Landfall', 'None');\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\par
+}
+ 
