@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +27,7 @@
 		</nav>
 
 		<div class="footer">
-				<p><small>GameLab 2019</span> <span>DiseÃ±ado por <a href="https://www.color-hex.com/color-palette/2280" target="_blank">GameLab</a> </span>
+				<p><small>GameLab 2019</small> <span>Diseñado por <a href="https://www.color-hex.com/color-palette/2280" target="_blank">GameLab</a> </span>
 				<ul>
 					<li><a href="https://www.facebook.com/" target="_blank"><i class="icon"><img class="icon" src="img/facebook.png"></i></a></li>
 					<li><a href="https://www.instagram.com/" target="_blank"><i class="icon"><img class="icon" src="img/instagram.png"></i></a></li>
@@ -35,7 +37,8 @@
 			</div>
 		</aside>
 	</header>
-	<main >
+	</div>
+	<main>
 		<div id=main >
 				<div class="carousel-caption">
 					<label>Genero:</label>
@@ -60,16 +63,12 @@
                 </div>
 
             </div>
-		</div>
-		</div>
-		
-		
+	
 	</main>
 	<footer>
 		<!-- pie de pagina	-->
 				
 	</footer>
-	</div>
 </body>
 
 </html>
