@@ -1,9 +1,10 @@
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Homepage</title>
+<title>Plantilla</title>
 <link href="img/packman.png" rel="icon" />
 <script src="js/script.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
@@ -31,7 +32,7 @@
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>Diseñado por <a
+						<small>GameLab 2019</small> <span>Dise�ado por <a
 							href="https://www.color-hex.com/color-palette/2280"
 							target="_blank">GameLab</a>
 						</span>
@@ -49,32 +50,7 @@
 			</aside>
 		</header>
 		<main>
-		<div id=main>
-			<div class="carousel-caption">
-				<h2>Qué es GamerLab?</h2>
-				<p>
-					Te da acceso a una libreria de <strong>Videojuegos</strong>
-				</p>
-				<div class="filter-box">
-					<form action="http://www.google.com/" class="banner-filter-box" method="get">
-						<label class="sr-only" for="keywords"></label> <input
-							class="form-control" placeholder="Buscar por Keyword"
-							id="keywords" name="keywords" type="text"> <select
-							name="category" id="category" class="form-control">
-							<option>Genero</option>
-							<option>Accion</option>
-							<option>Carreras</option>
-							<option>Deportes</option>
-							<option>Estrategia</option>
-							<option>Rol</option>
-						</select> <input class="form-control" type="submit" value="Search">
-					</form>
-				</div>
-				
-			</div>
-		</div>
-
-
+		<div id=main></div>
 
 		</main>
 		<footer>
