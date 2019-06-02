@@ -32,7 +32,7 @@
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>Dise�ado por <a
+						<small>GameLab 2019</small> <span>Diseñado por <a
 							href="https://www.color-hex.com/color-palette/2280"
 							target="_blank">GameLab</a>
 						</span>
@@ -61,40 +61,47 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="user" /> <span
-						class="focusInputSuscripcion"></span>
+					<input class="inputSuscripcion" type="text" id="user" placeholder=" Ej: ErickGamer22" pattern="[A-Za-z0-9]{2,40}"
+       						title="Sólo se admiten letras y números. Mín: 2 Máx: 40 caracteres" required/>
+       				<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
 					<span class="texto"> Nombre: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="nombre" /> <span
-						class="focusInputSuscripcion"></span>
+					<input class="inputSuscripcion" type="text" id="nombre" placeholder=" Ej: Erick"
+					pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,40}" 
+					required/>
+					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
 					<span class="texto"> Apellidos: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="apellidos" /> <span
-						class="focusInputSuscripcion"></span>
+					<input class="inputSuscripcion" type="text" id="apellidos" placeholder=" Ej: Fernandez"
+					pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+					required/>
+					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
 					<span class="texto"> Email: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="email" id="email" /> <span
-						class="focusInputSuscripcion"></span>
+					<input class="inputSuscripcion" type="email" id="email" placeholder=" Erik.gamelab@gmail.com"
+					pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" minlength="3" maxlength="40" required />
+					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
 					<span class="texto"> Domicilio: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="domicilio" /> <span
-						class="focusInputSuscripcion"></span>
+					<input class="inputSuscripcion" type="text" id="domicilio" placeholder="Calle Mario Bros Cars 21, 5D"
+					pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð /,.'-]{2,64}" required />
+					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
 					<span class="texto"> Edad: </span>
@@ -105,19 +112,21 @@
 						class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
-					<span class="texto"> Contrase�a: </span>
+					<span class="texto"> Contraseña: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="contrase�a" /> <span
-						class="focusInputSuscripcion"></span>
+					<input class="inputSuscripcion" type="text" id="contraseña" placeholder=" Contraseña" pattern= "[A-Za-z0-9!?.-_]{4,12}"
+        					title="Mín: 4 caracteres y se pueden usar !?.-_" required/>
+        			<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
-					<span class="texto"> Confirmar contrase�a: </span>
+					<span class="texto"> Confirmar contraseña: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="confirmar" /> <span
+					<input class="inputSuscripcion" type="text" id="confirmar" placeholder=" Repita su contraseña" pattern= "[A-Za-z0-9!?.-_]{4,12}"
+        					title="Mín: 4 caracteres y se pueden usar !?.-_" required/> <span
 						class="focusInputSuscripcion"></span>
 				</div>
 				<div class="button">
