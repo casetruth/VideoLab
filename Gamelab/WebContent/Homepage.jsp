@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +15,7 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Homepage.html"><img id="logo" src="img/packman.png"
+					<a href="Control?accion=homepage"><img id="logo" src="img/packman.png"
 						alt="Mario Bros"></a>
 				</h1>
 
@@ -22,16 +23,16 @@
 				<!-- Barrita de navegacion	-->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Homepage.html">Homepage</a></li>
-						<li><a href="">Libreria</a></li>
+						<li class="active"><a href="Control?accion=homepage">Homepage</a></li>
+						<li><a href="Control?accion=libreria">Libreria</a></li>
 						<li><a href="">Mi Cuenta</a></li>
-						<li><a href="Login.html" id="log">Login</a></li>
+						<li><a href="Control?accion=login" id="log">Login</a></li>
 					</ul>
 				</nav>
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>DiseÃ±ado por <a
+						<small>GameLab 2019</small> <span>Diseñado por <a
 							href="https://www.color-hex.com/color-palette/2280"
 							target="_blank">GameLab</a>
 						</span>
@@ -51,12 +52,13 @@
 		<main>
 		<div id=main>
 			<div class="carousel-caption">
-				<h2>QuÃ© es GamerLab?</h2>
+				<h2>Qué es GamerLab?</h2>
 				<p>
 					Te da acceso a una libreria de <strong>Videojuegos</strong>
 				</p>
 				<div class="filter-box">
-					<form action="http://www.google.com/" class="banner-filter-box" method="get">
+					<form action="http://www.google.com/" class="banner-filter-box"
+						method="get">
 						<label class="sr-only" for="keywords"></label> <input
 							class="form-control" placeholder="Buscar por Keyword"
 							id="keywords" name="keywords" type="text"> <select
@@ -70,7 +72,7 @@
 						</select> <input class="form-control" type="submit" value="Search">
 					</form>
 				</div>
-				
+
 			</div>
 		</div>
 
