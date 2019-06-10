@@ -39,13 +39,13 @@ function buscar() {
 	if (sel == "All") {
 		for (var d in games) {
 			text += "<div>"+"<img class='imgJuego' src='"+games[d].IMG+"'>"+"<p class='tit'><strong>"+games[d].titulo+"</strong></p>"+"<p class='dev'>Desarrollador: "+games[d].desarrollador+"</p>"+
-			"<p class='pegi'>PEGI: "+games[d].PEGI+"</p id='gen'><p>Generos: "+games[d].genero.t1+games[d].genero.t2+games[d].genero.t3+"</p></div>";
+			"<p class='pegi'>PEGI: "+games[d].PEGI+"</p> <p id='gen'>Generos: "+games[d].genero.t1+games[d].genero.t2+games[d].genero.t3+"</p></div>";
 		}
 	} else {
 		for (var d in games) {
 			if (sel == games[d].genero.t1 || sel == games[d].genero.t2 || sel == games[d].genero.t3){
 				text += "<div>"+"<img class='imgJuego' src='"+games[d].IMG+"'>"+"<p class='tit'><strong>"+games[d].titulo+"</strong></p>"+"<p class='dev'>Desarrollador: "+games[d].desarrollador+"</p>"+
-				"<p class='pegi'>PEGI: "+games[d].PEGI+"</p id='gen'><p>Generos: "+games[d].genero.t1+games[d].genero.t2+games[d].genero.t3+"</p></div>";
+				"<p class='pegi'>PEGI: "+games[d].PEGI+"</p> <p id='gen'>Generos: "+games[d].genero.t1+games[d].genero.t2+games[d].genero.t3+"</p></div>";
 			}
 
 		}

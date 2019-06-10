@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Plantilla</title>
-<link href="img/packman.png" rel="icon" />
+<link href="img/logo.png" rel="icon" />
 <script src="js/script.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -15,24 +15,23 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Homepage.html"><img id="logo" src="img/packman.png"
-						alt="Mario Bros"></a>
+					<a href="Homepage.jsp"><img id="logo" src="img/logo.png"></a>
 				</h1>
 
 
 				<!-- Barrita de navegacion	-->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Homepage.html">Homepage</a></li>
-						<li><a href="">Libreria</a></li>
+						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
+						<li><a href="Libreria.jsp">Libreria</a></li>
 						<li><a href="">Mi Cuenta</a></li>
-						<li><a href="Login.html" id="log">Login</a></li>
+						<li><a href="Login.jsp" id="log">Login</a></li>
 					</ul>
 				</nav>
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>Diseñado por <a
+						<small>GameLab 2019</small> <span>DiseÃ±ado por <a
 							href="https://www.color-hex.com/color-palette/2280"
 							target="_blank">GameLab</a>
 						</span>

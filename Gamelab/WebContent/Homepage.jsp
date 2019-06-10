@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Homepage</title>
-<link href="img/packman.png" rel="icon" />
+<link href="img/logo.png" rel="icon" />
 <script src="js/script.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -15,24 +15,23 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Control?accion=homepage"><img id="logo" src="img/packman.png"
-						alt="Mario Bros"></a>
+					<a href="Homepage.jsp"><img id="logo" src="img/logo.png"></a>
 				</h1>
 
 
 				<!-- Barrita de navegacion	-->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Control?accion=homepage">Homepage</a></li>
-						<li><a href="Control?accion=libreria">Libreria</a></li>
+						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
+						<li><a href="Libreria.jsp">Libreria</a></li>
 						<li><a href="">Mi Cuenta</a></li>
-						<li><a href="Control?accion=login" id="log">Login</a></li>
+						<li><a href="Login.jsp" id="log">Login</a></li>
 					</ul>
 				</nav>
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>Diseñado por <a
+						<small>GameLab 2019</small> <span>DiseÃ±ado por <a
 							href="https://www.color-hex.com/color-palette/2280"
 							target="_blank">GameLab</a>
 						</span>
@@ -52,7 +51,7 @@
 		<main>
 		<div id=main>
 			<div class="carousel-caption">
-				<h2>Qué es GamerLab?</h2>
+				<h2>QuÃ© es GamerLab?</h2>
 				<p>
 					Te da acceso a una libreria de <strong>Videojuegos</strong>
 				</p>
