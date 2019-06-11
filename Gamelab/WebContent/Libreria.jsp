@@ -21,7 +21,7 @@
 			<ul>
 				<li class="active"><a href="Homepage.jsp">Homepage</a></li>
 						<li><a href="Libreria.jsp">Libreria</a></li>
-						<li><a href="">Mi Cuenta</a></li>
+						<li><a href="miCuenta.jsp">Mi Cuenta</a></li>
 						<li><a href="Login.jsp" id="log">Login</a></li>
 			</ul>
 		</nav>
@@ -56,12 +56,12 @@
 					<div class="barraBusc">
    						<form>
     						<input type="text" placeholder="Busqueda..." name="buscar">
-      						<button clas="submit" type="submit"><img class="icon" src="img/Lupa.png"></img></button>
+      						<button class="submit" type="submit"><img class="icon" src="img/Lupa.png"></img></button>
    						</form>
   					</div> 
                 </div>
-                <div id="libreria">	
-                </div>
+                <div id="libreria" style="margin:2%; border-radius:5px; width:96%; display:grid; grid-template-areas:'main main';
+                background-color: #65737e;"></div>
 
             </div>
 	

@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <title>Mi cuenta</title>
-<link href="img/packman.png" rel="icon" />
+<link href="img/logo.png" rel="icon" />
 <script src="js/script.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -15,18 +15,17 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Homepage.html"><img id="logo" src="img/packman.png"
-						alt="Mario Bros"></a>
+					<a href="Homepage.jsp"><img id="logo" src="img/logo.png"></a>
 				</h1>
 
 
-				<!-- Barrita de navegacion  -->
+				<!-- Barrita de navegacion	-->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Homepage.html">Homepage</a></li>
-						<li><a href="">Libreria</a></li>
-						<li><a href="">Mi Cuenta</a></li>
-						<li><a href="Login.html" id="log">Login</a></li>
+						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
+						<li><a href="Libreria.jsp">Libreria</a></li>
+						<li><a href="miCuenta.jsp">Mi Cuenta</a></li>
+						<li><a href="Login.jsp" id="log">Login</a></li>
 					</ul>
 				</nav>
 

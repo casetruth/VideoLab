@@ -24,7 +24,7 @@
 					<ul>
 						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
 						<li><a href="Libreria.jsp">Libreria</a></li>
-						<li><a href="">Mi Cuenta</a></li>
+						<li><a href="miCuenta.jsp">Mi Cuenta</a></li>
 						<li><a href="Login.jsp" id="log">Login</a></li>
 					</ul>
 				</nav>

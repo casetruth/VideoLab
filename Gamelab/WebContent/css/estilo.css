@@ -80,8 +80,7 @@ aside {
   text-align: center;
 }
 #logo{
-  margin-left: 10%;
-  width: 80%;
+  width: 100%;
 }
 #menuLado #mainMenu ul {
   text-align: center;
@@ -818,13 +817,4 @@ color: #c0c0c0;
     width: 100%;
     margin: 0;
     padding: 14px;
-  }
-  
-  
-  #libreria{
-  width: 100px;
-  
-  }
-  .tit{
-  border-style: dotted;
   }
