@@ -51,12 +51,18 @@
 		<main>
 		<div id=main>
 			<div class="mainHome">
-				<div class="headHome">	<h2>Qué es GamerLab?</h2>
-						<p>Te da acceso a una libreria de <strong>Videojuegos</strong></p></div>
+				<div class="headHome">	<h2>Qué es GameLab?</h2>
+						<p>GAMELAB es el trabajo de un grupo de estudiantes de la formación "Desarrollo Web Java" que se ha unido gracias a la
+						Fundación Telefónica para hacer un pequeño proyecto que aquí presentamos. Se trata de una página de descargas que te da acceso a una libreria
+						de videojuegos online para PC. <strong>Videojuegos</strong></p></div>
 				<div class="juegoSemana">Juego de la semana</div>
 				<div class="juegoNuevo">Mejor Juego nuevo</div>
-				<div class="noticia1">Noticia 1</div>
-				<div class="noticia2">Noticia 2</div>
+				<div class="noticia1">
+					<img id= "evento1" src="img/evento1.jpg" />
+				</div>
+				<div class="noticia2">
+					<img id= "evento2" src="img/evento2.jpg" />
+				</div>
 			</div>
 		</div>
 

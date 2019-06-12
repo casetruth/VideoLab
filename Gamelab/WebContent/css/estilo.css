@@ -862,7 +862,25 @@ Homepage*/
 .noticia2{
   grid-area: noticia2;
   border-style: dashed;
+  
  
+}
+.img#evento1 {
+	margin:  0;
+	width: 50px;
+	height: 20px;
+	position: relative;
+    top: 150px;
+    left: 10px;		
+}
+
+.img#evento2 {
+	margin:  0;
+	width: 50px;
+	height: 20px;
+	position: relative;
+    top: 150px;
+    left: 10px;		
 }
 
 .mainHome{
