@@ -40,8 +40,8 @@
 	</div>
 	<main>
 		<div id=main >
-				<div class="carousel-caption">
-					<span class="gresearch">Genero:</span>
+				<div class="mainLibreria">
+					<span class="genreTitle">Genero:</span>
                 	<div class="wrap-input100">
                 	<select id="genre" onchange="buscar();">
 						<option value="All">Todos</option>
@@ -53,16 +53,16 @@
   						<option value=" Rol">Rol</option>
 					</select>
 					</div>
-					<div class="barraBusc">
-   						<form>
-    						<input type="text" placeholder="Busqueda..." name="buscar">
-      						<button class="submit" type="submit"><img class="icon" src="img/Lupa.png"></img></button>
+					
+   						<form class="barraBusc">
+   							<div class="wrap-input100" style="margin-top: 7px; background-color: transparent; border: none;">
+    						<input type="text" class="barraBuscar"placeholder="Busqueda..." name="buscar">
+      						</div> 
+  							<button class="submit" type="submit"><img class="icon" src="img/Lupa.png"></img></button>
    						</form>
-  					</div> 
+  					
                 </div>
-                <div id="libreria" style="margin:2%; border-radius:5px; width:96%; display:grid; grid-template-areas:'main main';
-                background-color: #65737e;"></div>
-
+                <div id="libreria"></div>
             </div>
 	
 	</main>

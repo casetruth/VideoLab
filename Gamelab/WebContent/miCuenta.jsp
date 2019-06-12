@@ -82,7 +82,7 @@
          	</form>
          	
          	<h1>ESTADO DE LA SUSCRIPCIÓN</h1>
-         	<p><a href="formadepago.jsp">Suscríbete!</a></p>
+         	<p><a href="Suscripcion.jsp">Suscríbete!</a></p>
          	<form>
          	<h2>Suscripción:  </h2>
          	<h2>Fecha de alta:  </h2>
