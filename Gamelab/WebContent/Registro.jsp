@@ -61,7 +61,7 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="user" placeholder=" Ej: ErickGamer22" pattern="[A-Za-z0-9]{2,40}"
+					<input class="inputSuscripcion" type="text" id="user" placeholder=" Ej: Gamer22" pattern="[A-Za-z0-9]{2,40}"
        						title="SÃ³lo se admiten letras y nÃºmeros. MÃ­n: 2 MÃ¡x: 40 caracteres" required/>
        				<span class="focusInputSuscripcion"></span>
 				</div>

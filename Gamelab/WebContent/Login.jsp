@@ -55,9 +55,8 @@
 
 
 			<div id="login">
-				<span class="login-title"> Log in con: </span> <a
-					href="https://www.facebook.com/" class="btn-face"> <img
-					src="img/facebook.png" alt="Facebook"> Facebook
+				<span class="login-title"> Login on: </span> <a href="https://www.facebook.com/" class="btn-face">
+				 <img src="img/facebook.png" alt="Facebook"> Facebook
 				</a> <a href="https://www.gmail.com/" class="btn-google"> <img
 					src="img/icon-google.png" alt="GOOGLE"> Google
 				</a>
@@ -65,10 +64,8 @@
 				<div class="p-t-31 p-b-9">
 					<span class="txt1"> Usuario </span>
 				</div>
-				<div class="wrap-input100 validate-input"
-					data-validate="Username is required">
-					<input class="input100" type="text" name="username"> <span
-						class="focus-input100"></span>
+				<div class="wrap-input100 validate-input" data-validate="Username is required">
+					<input class="input100" type="text" name="username"> <span class="focus-input100"></span>
 				</div>
 
 				<div class="p-t-13 p-b-9">
@@ -76,10 +73,8 @@
 						<input type="checkbox"> <span class="checkmark"></span>
 					</label>
 				</div>
-				<div class="wrap-input100 validate-input"
-					data-validate="Password is required">
-					<input class="input100" type="password" name="pass"> <span
-						class="focus-input100"></span>
+				<div class="wrap-input100 validate-input" data-validate="Password is required">
+					<input class="input100" type="password" name="pass"> <span class="focus-input100"></span>
 				</div>
 				<a href="#" class="txt2"> Olvidaste la contraseña? </a>
 
@@ -89,8 +84,8 @@
 				</div>
 
 				<div>
-					<span class="txt2"> No eres miembro? </span> 
-					<a href="Registro.jsp" class="txt2"> Regístrate </a>
+					<span class="txt2"> No eres miembro? </span> <a href="Registro.jsp"
+						class="txt2"> Regístrate </a>
 				</div>
 
 			</div>
@@ -121,7 +116,6 @@
 
 		</main>
 		<footer>
-			<!-- pie de pagina	-->
 
 		</footer>
 	</div>

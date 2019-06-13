@@ -32,7 +32,7 @@
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</span> <span>Diseñado por <a
+						<small>GameLab 2019</small> <span>Diseñado por <a
 								href="https://www.color-hex.com/color-palette/2280"
 								target="_blank">GameLab</a>
 						</span>
@@ -51,9 +51,9 @@
 		</header>
 		<main>
 		<div id=main>
-			<center>
+			
 				<h1>SUSCRIBETE</h1>
-			</center>
+		
 
 			<form action="/my-handling-form-page" method="post">
 				<div class="wrapTexto">
@@ -113,7 +113,7 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="numero" id="edad" required />
+					<input class="inputSuscripcion" type="number" id="edad" required />
 					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">

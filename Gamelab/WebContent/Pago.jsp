@@ -18,9 +18,9 @@
         <form>
 
         	<div>
-                <CENTER>
+                
                 	<p>PAGAR SUSCRIPCION</p>
-                </CENTER>
+         
 
             </div>
             <div>
