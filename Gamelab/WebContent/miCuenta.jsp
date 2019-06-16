@@ -15,17 +15,17 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Homepage.jsp"><img id="logo" src="img/logo.png"></a>
+					<a href="Control?accion=Homepage"><img id="logo" src="img/logo.png"></a>
 				</h1>
 
 
 				<!-- Barrita de navegacion	-->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
-						<li><a href="Libreria.jsp">Libreria</a></li>
-						<li><a href="miCuenta.jsp">Mi Cuenta</a></li>
-						<li><a href="Login.jsp" id="log">Login</a></li>
+						<li class="active"><a href="Control?accion=Homepage">Homepage</a></li>
+						<li><a href="Control?accion=Libreria">Libreria</a></li>
+						<li><a href="Control?accion=miCuenta">Mi Cuenta</a></li>
+						<li><a href="Control?accion=Login" id="log">Login</a></li>
 					</ul>
 				</nav>
 

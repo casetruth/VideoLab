@@ -15,17 +15,17 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Homepage.jsp"><img id="logo" src="img/logo.png"></a>
+					<a href="Control?accion=Homepage"><img id="logo" src="img/logo.png"></a>
 				</h1>
 
 
 				<!-- Barrita de navegacion	-->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
-						<li><a href="Libreria.jsp">Libreria</a></li>
-						<li><a href="miCuenta.jsp">Mi Cuenta</a></li>
-						<li><a href="Login.jsp" id="log">Login</a></li>
+						<li class="active"><a href="Control?accion=Homepage">Homepage</a></li>
+						<li><a href="Control?accion=Libreria">Libreria</a></li>
+						<li><a href="Control?accion=miCuenta">Mi Cuenta</a></li>
+						<li><a href="Control?accion=Login" id="log">Login</a></li>
 					</ul>
 				</nav>
 
@@ -55,6 +55,7 @@
 
 
 			<div id="login">
+			 <form action="Logger" method="post">
 				<span class="login-title"> Login on: </span> <a href="https://www.facebook.com/" class="btn-face">
 				 <img src="img/facebook.png" alt="Facebook"> Facebook
 				</a> <a href="https://www.gmail.com/" class="btn-google"> <img
@@ -62,14 +63,15 @@
 				</a>
 
 				<div class="p-t-31 p-b-9">
-					<span class="txt1"> Usuario </span>
+					<span class="txt1"><label for="username"> Usuario </label> </span>
 				</div>
 				<div class="wrap-input100 validate-input" data-validate="Username is required">
 					<input class="input100" type="text" name="username"> <span class="focus-input100"></span>
 				</div>
 
 				<div class="p-t-13 p-b-9">
-					<span class="txt1"> Contraseña </span> <label class="container">Recordarme
+					<span class="txt1"> <label for="pass" > Contraseña </label></span> 
+					<label class="container">Recordarme
 						<input type="checkbox"> <span class="checkmark"></span>
 					</label>
 				</div>
@@ -80,44 +82,18 @@
 
 
 				<div>
-					<button class="login100-form-btn">Login</button>
+					<input Type="Submit" value="Login">
 				</div>
 
 				<div>
 					<span class="txt2"> No eres miembro? </span> <a href="Registro.jsp"
 						class="txt2"> Regístrate </a>
 				</div>
-
+				</form>
 			</div>
 		</div>
-		<!--===============================================================================================--
-			<div id="login">
-  			<form class="contenido">
-    			<div class="container">
-     				<label for="usuario"><b>Usuario</b></label>
-    				<input type="text" placeholder="Escribe Usuario" name="usuario" required>
-					<label for="pass"><b><span>Contraseña</span></b></label>
-     				<input type="password" placeholder="Escribe contraseña" name="pass" required>
-     				<button type="submit">Login</button>
-     				<label>
-    		    	<input type="checkbox" checked="checked" name="recordarme"> Recordarme
-    				</label>
-   				</div>
-   				<div class="Cont">
-     				<button type="button" onclick="cancel()" class="cancel">Cancelar</button>
-     				<span class="pass"> <a href="#">Olvidaste la contraseña?</a></span>
-    			</div>
- 			</form>
- 			</div>
-		</div>
-======================================================================================================-->
-
-
 
 		</main>
-		<footer>
-
-		</footer>
 	</div>
 </body>
 

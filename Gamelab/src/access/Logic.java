@@ -1,6 +1,5 @@
 package access;
 
-import java.sql.Connection;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -11,8 +10,6 @@ import javax.persistence.TypedQuery;
 import model.*;
 
 public class Logic {
-	private String mensaje;
-	private Connection con;
 	EntityManagerFactory factoria = Persistence.createEntityManagerFactory("Gamelab");
 	EntityManager em = factoria.createEntityManager();
 	
@@ -24,11 +21,13 @@ public class Logic {
 		for (Usuario u : user) {
 			if (usuario==u.getNombreUsuario() && password==u.getContraseña() ) {
 				log = true;
+			
 			}
 		}
 		
 		
 		return log;
 	}
+	
 
 }

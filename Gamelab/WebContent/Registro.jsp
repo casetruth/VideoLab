@@ -15,7 +15,7 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Homepage.jsp"><img id="logo" src="img/logo.png"
+					<a href="Control?accion=Homepage"><img id="logo" src="img/logo.png"
 						alt="Mario Bros"></a>
 				</h1>
 
@@ -23,10 +23,10 @@
 				<!-- Barrita de navegacion  -->
 				<nav id="mainMenu" role="navigation">
 					<ul>
-						<li class="active"><a href="Homepage.jsp">Homepage</a></li>
-						<li><a href="Libreria.jsp">Libreria</a></li>
-						<li><a href="miCuenta.jsp">Mi Cuenta</a></li>
-						<li><a href="Login.jsp" id="log">Login</a></li>
+						<li class="active"><a href="Control?accion=Homepage">Homepage</a></li>
+						<li><a href="Control?accion=Libreria">Libreria</a></li>
+						<li><a href="Control?accion=miCuenta">Mi Cuenta</a></li>
+						<li><a href="Control?accion=Login" id="log">Login</a></li>
 					</ul>
 				</nav>
 
@@ -62,7 +62,7 @@
 				<div class="wrapInput">
 
 					<input class="inputSuscripcion" type="text" id="user" placeholder=" Ej: Gamer22" pattern="[A-Za-z0-9]{2,40}"
-       						title="SÃ³lo se admiten letras y nÃºmeros. MÃ­n: 2 MÃ¡x: 40 caracteres" required/>
+       						title="Solo se admiten letras y numeros. Min: 2 Max: 40 caracteres" required/>
        				<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
@@ -91,7 +91,7 @@
 				<div class="wrapInput">
 
 					<input class="inputSuscripcion" type="email" id="email" placeholder=" Erik.gamelab@gmail.com"
-					pattern="^[a-zA-Z0-9.!#$%&â*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" minlength="3" maxlength="40" required />
+					pattern="^[a-zA-Z0-9.!#$%&â*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$.{3,40}" maxlength="40" required />
 					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
