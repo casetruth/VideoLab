@@ -797,15 +797,15 @@ LIBRERIA*/
   }
 }
 .barraBuscar{
-  background-color: transparent;
-  border:none;
+  background-color: #a7adba;
+  border: none;
   box-sizing: border-box;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
   border-radius: 5px;
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   margin:0px;
   padding:0px;
 }
@@ -816,6 +816,13 @@ LIBRERIA*/
   background: -o-linear-gradient(45deg, #4c2827, #f20804);
   background: -moz-linear-gradient(45deg, #4c2827, #f20804);
   background: linear-gradient(45deg, #4c2827, #f20804); 
+}
+@media screen and (max-width: 768px) {
+  #libreria {
+      display:grid; 
+      grid-template-areas:'main';
+
+  }
 }
 .barraBusc{
   border:none;
@@ -903,4 +910,63 @@ Homepage*/
 }
 #imgpago{
 	width: 50px;
+}
+/*------------------------------------------------------------------
+------------------------------------------------------------------
+Mi Cuenta*/
+.mainCuenta{
+  margin: 3%;
+}
+
+.mainCuenta h1{
+  text-align: center;
+}
+.profpic{
+  width: 100%;
+  border-style: dashed;
+  grid-area: profpic;
+}
+.infoCuenta{
+  width: 100%;
+  border-style: dashed;
+  grid-area: infoCuenta;
+
+}
+.infoCuenta h1{
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+
+.gridCuenta{
+  display:grid;
+  grid-gap: 10px; 
+  grid-template-areas:'profpic infoCuenta';
+}
+.labelCuenta{
+  width: 200px;
+  border-style: dashed;
+}
+
+.avatar{
+  padding-left: 10%;
+  padding-right: 10%;
+  width:80%;
+  border-radius: 50%;
+}
+.infoSuscripcion h3, h2{
+  margin: 0;
+  padding: 0;
+}
+
+.btnCuenta{
+  border-radius:5px;
+  background-color: #f20804;
+  border:none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btnCuenta:hover{
+  font-size: 20px;
 }

@@ -15,7 +15,8 @@
 			<aside id="menuLado" role="complementary"
 				class="border js-fullheight">
 				<h1>
-					<a href="Control?accion=Homepage"><img id="logo" src="img/logo.png"></a>
+					<a href="Control?accion=Homepage"><img id="logo"
+						src="img/logo.png"></a>
 				</h1>
 
 
@@ -24,19 +25,23 @@
 					<ul>
 						<li class="active"><a href="Control?accion=Homepage">Homepage</a></li>
 						<li><a href="Control?accion=Libreria">Libreria</a></li>
-						<% 
-						HttpSession sesion = request.getSession(true);
-						String user = (String) sesion.getAttribute("user");
-						
-						if (user == null) {
+						<%
+							HttpSession sesion = request.getSession(true);
+							String user = (String) sesion.getAttribute("user");
+
+							if (user == null) {
 						%>
 						<li><a href="Control?accion=Registro">Registrate</a></li>
 						<li><a href="Control?accion=Login" id="log">Login</a></li>
-						<% } else { %>
+						<%
+							} else {
+						%>
 						<li><a href="Control?accion=miCuenta">Mi Cuenta</a></li>
-						<li>Usuario: <%= sesion.getAttribute("user") %></li>
+						<li>Usuario: <%=sesion.getAttribute("user")%></li>
 						<li><a href="Control?accion=Cerrar">Cerrar sesion</a></li>
-						<% } %>
+						<%
+							}
+						%>
 					</ul>
 				</nav>
 
@@ -92,18 +97,32 @@
 				</div>
 
 				<div class="noticia1">
-					<img id="evento1" src="img/evento1.jpg" />
+					Noticia 1
+					<div class="feedgrabbr_widget" id="fgid_60d00bb8ab61ef8547f1535d4"></div>
+					<script>
+						if (typeof (fg_widgets) === "undefined")
+							fg_widgets = new Array();
+						fg_widgets.push("fgid_60d00bb8ab61ef8547f1535d4");
+					</script>
+					<script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
+
 				</div>
 				<div class="noticia2">
-					<img id="evento2" src="img/evento2.jpg" />
+					Noticia 2
+					<!-- start feedwind code -->
+					<script type="text/javascript"
+						src="https://feed.mikle.com/js/fw-loader.js"
+						data-fw-param="111106/"></script>
+					<!-- end feedwind code -->
 				</div>
 			</div>
 		</div>
-
-
-
-		</main>
 	</div>
+
+
+
+	</main>
+	
 </body>
 
 </html>

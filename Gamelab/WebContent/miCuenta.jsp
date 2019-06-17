@@ -61,52 +61,74 @@
 		</header>
 		<main>
 		<div id=main>
-		<form action="gamelab" method="post">
-			<h1>MI CUENTA</h1>
-			
-			<label for="nombre">Nombre: </label>
-			<input type="text" name="nombre"/>
-			<br>
-			<label for="apellidos">Apellidos: </label>
-			<input type="text" name="apellidos"/>
-			<br>
-			<label for="email">Dirección de correo electrónico: </label>
-			<input type="text" name="email"/>
-			<br>
-			<label for="usuario">Nombre de usuario: </label>
-			<input type="text" name="usuario"/>
-			<br>
-			<label for="imagen">Imagen de usuario: </label>
-			<input type="image" name="imagen"/>
-			<br>
-			<input type="submit" value="Guardar cambios" />
-			<h1>CONTRASEÑA</h1>
-			<label for="nuevacontraseña">Nueva contraseña: </label>
-         	<input type="password" name="nuevacontraseña" />
-         	<br>
-         	<label for="nuevacontraseña">Confirmar contraseña: </label>
-         	<input type="password" name="nuevacontraseña" />
-         	<br>
-         	<input type="submit" value="Guardar cambios" />
-         	<br>
-         	<input type="submit" value="BORRAR CUENTA" />
-         	</form>
+		<div class="mainCuenta">
+				<form action="gamelab" method="post" style='width:99.5%; padding:0; margin:0;'>
+				<h1>MI CUENTA</h1>
+			<div class="gridCuenta">
+				<div class="profpic">
+					<label for="imagen">Imagen de usuario: </label>
+					<input type="image" name="imagen" class="avatar" src="img/avatar_m.jpg"/>
+				</div>
+
+				<div class="infoCuenta">	
+					<div class="wrapTexto">
+					<span class="texto">Nombre: </span>
+					</div>
+					<input type="text" name="nombre"/>
+					<br>
+					<div class="wrapTexto">
+					<span class="texto">Apellidos: </span>
+					</div>
+					<input type="text" name="apellidos"/>
+					<br>
+					<div class="wrapTexto">
+					<span class="texto">email: </span>
+					</div>
+					<input type="text" name="email"/>
+					<br>
+					<div class="wrapTexto">
+					<span class="texto">Usario: </span>
+					</div>
+					<input type="text" name="usuario"/>
+					<br>
+					<input type="submit" class="btnCuenta" value="Guardar cambios" />
+					<h1>CONTRASEÑA</h1>
+					<div class="wrapTexto">
+					<span class="texto">Nueva Contraseña: </span>
+					</div>
+         			<input type="password" name="nuevacontraseña" />
+         			<br>
+         			<div class="wrapTexto">
+					<span class="texto">Confirmar Contraseña: </span>
+					</div>
+         			<input type="password" name="nuevacontraseña" />
+         			<br>
+         			<input type="submit" class="btnCuenta" value="Guardar cambios" />
+         			<br>
+         			<input type="submit" class="btnCuenta" value="BORRAR CUENTA" />
+         		</div>
+         	</div>
+        	</form>
          	
-         	<h1>ESTADO DE LA SUSCRIPCIÓN</h1>
-         	<p><a href="Suscripcion.jsp">Suscríbete!</a></p>
-         	<form>
-         	<h2>Suscripción:  </h2>
-         	<h2>Fecha de alta:  </h2>
-         	<h2>Fecha de caducidad: </h2>
-         	<h2>Sus descargas: </h2>
+        	<div class="infoSuscripcion">
+         			<h2>ESTADO DE LA SUSCRIPCIÓN</h1>
+         			<a href="Suscripcion.jsp">Suscríbete!</a>
+         			<form>
+         			<h3>Suscripción:  </h3>
+         			<h3>Fecha de alta:  </h3>
+         			<h3>Fecha de caducidad: </h3>
+         			<h3>Sus descargas: </h3>
          	
-                	<select id="opciones">
-						<option value="renovar">Renovar</option>
-  						<option value="baja">Darme de baja</option>
+                			<select id="opciones">
+								<option value="renovar">Renovar</option>
+  								<option value="baja">Darme de baja</option>
   						</select>
-  					<input type="submit" value="Actualizar" />
-         	</form>
+  							<input type="submit" class="btnCuenta" value="Actualizar" />
+         			</form>
 			
+         			</div>
+
+			</div>
 			
 
 
