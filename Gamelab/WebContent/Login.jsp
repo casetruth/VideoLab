@@ -24,8 +24,19 @@
 					<ul>
 						<li class="active"><a href="Control?accion=Homepage">Homepage</a></li>
 						<li><a href="Control?accion=Libreria">Libreria</a></li>
-						<li><a href="Control?accion=miCuenta">Mi Cuenta</a></li>
+						<% 
+						HttpSession sesion = request.getSession(true);
+						String user = (String) sesion.getAttribute("user");
+						
+						if (user == null) {
+						%>
+						<li><a href="Control?accion=Registro">Registrate</a></li>
 						<li><a href="Control?accion=Login" id="log">Login</a></li>
+						<% } else { %>
+						<li><a href="Control?accion=miCuenta">Mi Cuenta</a></li>
+						<li>Usuario: <%= sesion.getAttribute("user") %></li>
+						<li><a href="Control?accion=Cerrar">Cerrar sesion</a></li>
+						<% } %>
 					</ul>
 				</nav>
 
@@ -86,7 +97,7 @@
 				</div>
 
 				<div>
-					<span class="txt2"> No eres miembro? </span> <a href="Registro.jsp"
+					<span class="txt2"> No eres miembro? </span> <a href="Control?accion=Registro"
 						class="txt2"> Regístrate </a>
 				</div>
 				</form>

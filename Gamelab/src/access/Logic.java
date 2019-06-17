@@ -19,7 +19,7 @@ public class Logic {
 		List<Usuario> user = query.getResultList();
 		
 		for (Usuario u : user) {
-			if (usuario==u.getNombreUsuario() && password==u.getContraseña() ) {
+			if (usuario.equals(u.getNombreUsuario()) && password.equals(u.getContraseña()) ) {
 				log = true;
 			
 			}

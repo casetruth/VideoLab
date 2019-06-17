@@ -60,7 +60,7 @@ public class Control extends HttpServlet {
 					if (sesion.getAttribute("user") != null) {
 						rd = request.getRequestDispatcher("/miCuenta.jsp");
 					} else {
-						rd = request.getRequestDispatcher("/Homepage.jsp");
+						rd = request.getRequestDispatcher("/Login.jsp");
 					}
 					break;
 				case "Suscripcion":
@@ -70,7 +70,7 @@ public class Control extends HttpServlet {
 					if (sesion.getAttribute("user") != null) {
 						rd = request.getRequestDispatcher("/Libreria.jsp");
 					} else {
-						rd = request.getRequestDispatcher("/Homepage.jsp");
+						rd = request.getRequestDispatcher("/Login.jsp");
 					}
 					break;
 				case "Nosotros":
@@ -82,7 +82,9 @@ public class Control extends HttpServlet {
 				case "Registro":
 					rd = request.getRequestDispatcher("/Registro.jsp");
 					break;
-				
+				case "Cerrar":
+					rd = request.getRequestDispatcher("CerrarSession");
+					break;
 			}
 		}
 			rd.forward(request, response);	
