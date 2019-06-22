@@ -29,5 +29,15 @@ public class Logic {
 		return log;
 	}
 	
+	public List<Libreria> buscador() {
+		try {
+			TypedQuery<Libreria> query = em.createNamedQuery("Libreria.findAll", Libreria.class);
+			List<Libreria> Librerias = query.getResultList();
+			return Librerias;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+	
 
 }

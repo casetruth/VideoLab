@@ -67,9 +67,9 @@
 					
    						<form class="barraBusc">
    							<div class="wrap-input100" style="margin-top: 7px; background-color: transparent; border: none;">
-    						<input type="text" class="barraBuscar"placeholder="Busqueda..." name="buscar">
+    						<input type="text" class="barraBuscar"placeholder="Busqueda..." name="buscar" id="buscar">
       						</div> 
-  							<button class="submit" type="button" onclick="" ><img class="icon" src="img/Lupa.png"></img></button>
+  							<button class="submit" type="button" onclick="buscar()" ><img class="icon" src="img/Lupa.png"></img></button>
    						</form>
   					
                 </div>
