@@ -2,6 +2,7 @@ package model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -30,9 +31,12 @@ public class Usuario implements Serializable {
 	private String nombreUsuario;
 
 	//bi-directional many-to-one association to Suscripcion
-	@ManyToOne
-	@JoinColumn(name="idSUSCRIPCION")
-	private Suscripcion suscripcion;
+	@OneToMany(mappedBy="usuario")
+	private List<Suscripcion> suscripcions;
+
+	//bi-directional many-to-one association to TarjetaCredito
+	@OneToMany(mappedBy="usuario")
+	private List<TarjetaCredito> tarjetaCreditos;
 
 	public Usuario() {
 	}
@@ -93,12 +97,48 @@ public class Usuario implements Serializable {
 		this.nombreUsuario = nombreUsuario;
 	}
 
-	public Suscripcion getSuscripcion() {
-		return this.suscripcion;
+	public List<Suscripcion> getSuscripcions() {
+		return this.suscripcions;
 	}
 
-	public void setSuscripcion(Suscripcion suscripcion) {
-		this.suscripcion = suscripcion;
+	public void setSuscripcions(List<Suscripcion> suscripcions) {
+		this.suscripcions = suscripcions;
+	}
+
+	public Suscripcion addSuscripcion(Suscripcion suscripcion) {
+		getSuscripcions().add(suscripcion);
+		suscripcion.setUsuario(this);
+
+		return suscripcion;
+	}
+
+	public Suscripcion removeSuscripcion(Suscripcion suscripcion) {
+		getSuscripcions().remove(suscripcion);
+		suscripcion.setUsuario(null);
+
+		return suscripcion;
+	}
+
+	public List<TarjetaCredito> getTarjetaCreditos() {
+		return this.tarjetaCreditos;
+	}
+
+	public void setTarjetaCreditos(List<TarjetaCredito> tarjetaCreditos) {
+		this.tarjetaCreditos = tarjetaCreditos;
+	}
+
+	public TarjetaCredito addTarjetaCredito(TarjetaCredito tarjetaCredito) {
+		getTarjetaCreditos().add(tarjetaCredito);
+		tarjetaCredito.setUsuario(this);
+
+		return tarjetaCredito;
+	}
+
+	public TarjetaCredito removeTarjetaCredito(TarjetaCredito tarjetaCredito) {
+		getTarjetaCreditos().remove(tarjetaCredito);
+		tarjetaCredito.setUsuario(null);
+
+		return tarjetaCredito;
 	}
 
 }

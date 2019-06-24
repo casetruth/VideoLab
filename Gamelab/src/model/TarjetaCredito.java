@@ -16,7 +16,7 @@ public class TarjetaCredito implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String idUSUARIO;
+	private String idTARJETA;
 
 	private int ccv;
 
@@ -28,15 +28,20 @@ public class TarjetaCredito implements Serializable {
 
 	private String tipo;
 
+	//bi-directional many-to-one association to Usuario
+	@ManyToOne
+	@JoinColumn(name="idUSUARIO")
+	private Usuario usuario;
+
 	public TarjetaCredito() {
 	}
 
-	public String getIdUSUARIO() {
-		return this.idUSUARIO;
+	public String getIdTARJETA() {
+		return this.idTARJETA;
 	}
 
-	public void setIdUSUARIO(String idUSUARIO) {
-		this.idUSUARIO = idUSUARIO;
+	public void setIdTARJETA(String idTARJETA) {
+		this.idTARJETA = idTARJETA;
 	}
 
 	public int getCcv() {
@@ -69,6 +74,14 @@ public class TarjetaCredito implements Serializable {
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+
+	public Usuario getUsuario() {
+		return this.usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 }

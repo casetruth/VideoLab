@@ -95,7 +95,7 @@
 					<input class="inputSuscripcion" type="email" id="email"
 						placeholder=" Erik.gamelab@gmail.com"
 						pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-						minlength="3" maxlength="40" required /> <span
+						 maxlength="40" required /> <span
 						class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
@@ -123,7 +123,7 @@
 
 					<input class="inputSuscripcion" type="password" id="contraseña"
 						placeholder=" Contraseña" required pattern="[A-Za-z0-9!?.-]{4,12}"
-						minlength="4" title="Mín: 4 caracteres y se pueden usar !?.-_" />
+						 title="Mín: 4 caracteres y se pueden usar !?.-_" />
 					<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
@@ -133,7 +133,7 @@
 
 					<input class="inputSuscripcion" type="password" id="confirmar"
 						placeholder=" Repita su contraseña" required
-						pattern="[A-Za-z0-9!?.-]{4,12}" minlength="4"
+						pattern="[A-Za-z0-9!?.-]{4,12}" 
 						title="Mín: 4 caracteres y se pueden usar !?.-_" /> <span
 						class="focusInputSuscripcion"></span>
 				</div>

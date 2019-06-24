@@ -111,7 +111,7 @@
         	</form>
          	
         	<div class="infoSuscripcion">
-         			<h2>ESTADO DE LA SUSCRIPCIÓN</h1>
+         			<h2>ESTADO DE LA SUSCRIPCIÓN</h2>
          			<a href="Suscripcion.jsp">Suscríbete!</a>
          			<form>
          			<h3>Suscripción:  </h3>

@@ -3,7 +3,6 @@ package model;
 import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 
 /**
@@ -31,8 +30,9 @@ public class Suscripcion implements Serializable {
 	private String numero;
 
 	//bi-directional many-to-one association to Usuario
-	@OneToMany(mappedBy="suscripcion")
-	private List<Usuario> usuarios;
+	@ManyToOne
+	@JoinColumn(name="idUSUARIO")
+	private Usuario usuario;
 
 	public Suscripcion() {
 	}
@@ -77,26 +77,12 @@ public class Suscripcion implements Serializable {
 		this.numero = numero;
 	}
 
-	public List<Usuario> getUsuarios() {
-		return this.usuarios;
+	public Usuario getUsuario() {
+		return this.usuario;
 	}
 
-	public void setUsuarios(List<Usuario> usuarios) {
-		this.usuarios = usuarios;
-	}
-
-	public Usuario addUsuario(Usuario usuario) {
-		getUsuarios().add(usuario);
-		usuario.setSuscripcion(this);
-
-		return usuario;
-	}
-
-	public Usuario removeUsuario(Usuario usuario) {
-		getUsuarios().remove(usuario);
-		usuario.setSuscripcion(null);
-
-		return usuario;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 }

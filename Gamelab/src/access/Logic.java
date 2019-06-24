@@ -10,8 +10,8 @@ import javax.persistence.TypedQuery;
 import model.*;
 
 public class Logic {
-	EntityManagerFactory factoria = Persistence.createEntityManagerFactory("Gamelab");
-	EntityManager em = factoria.createEntityManager();
+	EntityManagerFactory factoria =  Persistence.createEntityManagerFactory("gamelab");  //
+	EntityManager em = factoria.createEntityManager(); //
 	
 	public boolean login(String usuario, String password) {
 		boolean log = false;

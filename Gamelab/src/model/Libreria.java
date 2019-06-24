@@ -22,6 +22,8 @@ public class Libreria implements Serializable {
 
 	private String genero;
 
+	private String imagen;
+
 	private String pegi;
 
 	private String titulo;
@@ -59,6 +61,14 @@ public class Libreria implements Serializable {
 
 	public void setGenero(String genero) {
 		this.genero = genero;
+	}
+
+	public String getImagen() {
+		return this.imagen;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
 	}
 
 	public String getPegi() {
