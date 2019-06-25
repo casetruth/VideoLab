@@ -38,7 +38,7 @@
 		</nav>
 
 		<div class="footer">
-				<p><small>GameLab 2019</small> <span>Diseñado por <a href="https://www.color-hex.com/color-palette/2280" target="_blank">GameLab</a> </span>
+				<p><small>GameLab 2019</small> <span>Acerca de nosotros <a href="Nosotros.jsp" target="_blank">Nosotros</a> </span>
 				<ul>
 					<li><a href="https://www.facebook.com/" target="_blank"><i class="icon"><img class="icon" src="img/facebook.png"></i></a></li>
 					<li><a href="https://www.instagram.com/" target="_blank"><i class="icon"><img class="icon" src="img/instagram.png"></i></a></li>
@@ -65,12 +65,12 @@
 					</select>
 					</div>
 					
-   						<form class="barraBusc">
+   						<div class="barraBusc">
    							<div class="wrap-input100" style="margin-top: 7px; background-color: transparent; border: none;">
     						<input type="text" class="barraBuscar" placeholder="Busqueda..." name="buscar" id="buscar">
       						</div> 
   							<button class="submit" type="button" onclick="buscar()" ><img class="icon" src="img/Lupa.png"></img></button>
-   						</form>
+   						</div>
   					
                 </div>
                 <div id="libreria"></div>

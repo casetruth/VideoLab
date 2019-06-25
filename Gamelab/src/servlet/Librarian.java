@@ -45,7 +45,7 @@ public class Librarian extends HttpServlet {
 						
 						try {
 							salida.append("<div style='width:97% padding:3%; margin:3%;'>"+
-									"<img id=Imagenlib src="+l.getImagen()+" />"+
+									"<img style='width:70%; margin-left:15%; border-radius:5%;'id=Imagenlib src="+l.getImagen()+" />"+
 						"<p style='margin:0px; text-align:center;' class='tit'><strong>"+l.getTitulo()+"</strong></p>"
 									+"<p style='margin:0px;' class='tit'>"+l.getDescripcion()+"</p>"
 									+"<p style='margin:0px;' class='dev'>Desarrollador: "+l.getDesarrollador()+"</p>"
@@ -58,7 +58,7 @@ public class Librarian extends HttpServlet {
 					} else if (l.getGenero().toUpperCase().contains(select.toUpperCase())) {
 						try {
 							salida.append("<div style='width:97% padding:3%; margin:3%;'>"+
-									"<img id=Imagenlib src="+l.getImagen()+" />"+
+									"<img style='width:70%; margin-left:15%; border-radius:5%;'id=Imagenlib src="+l.getImagen()+" />"+
 						"<p style='margin:0px; text-align:center;' class='tit'><strong>"+l.getTitulo()+"</strong></p>"
 									+"<p style='margin:0px;' class='tit'>"+l.getDescripcion()+"</p>"
 									+"<p style='margin:0px;' class='dev'>Desarrollador: "+l.getDesarrollador()+"</p>"
@@ -74,7 +74,7 @@ public class Librarian extends HttpServlet {
 				} else if (select.toUpperCase().equals("ALL") && l.getTitulo().toUpperCase().contains(barra.toUpperCase())){
 					try {
 						salida.append("<div style='width:97% padding:3%; margin:3%;'>"+
-								"<img id=Imagenlib src="+l.getImagen()+" />"+
+								"<img style='width:70%; margin-left:15%; border-radius:5%;'id=Imagenlib src="+l.getImagen()+" />"+
 					"<p style='margin:0px; text-align:center;' class='tit'><strong>"+l.getTitulo()+"</strong></p>"
 								+"<p style='margin:0px;' class='tit'>"+l.getDescripcion()+"</p>"
 								+"<p style='margin:0px;' class='dev'>Desarrollador: "+l.getDesarrollador()+"</p>"
@@ -87,7 +87,7 @@ public class Librarian extends HttpServlet {
 				} else if (l.getGenero().toUpperCase().contains(select.toUpperCase()) && l.getTitulo().toUpperCase().contains(barra.toUpperCase())) {
 					try {
 						salida.append("<div style='width:97% padding:3%; margin:3%;'>"+
-								"<img id=Imagenlib src="+l.getImagen()+" />"+
+								"<img style='width:70%; margin-left:15%; border-radius:5%;'id=Imagenlib src="+l.getImagen()+" />"+
 					"<p style='margin:0px; text-align:center;' class='tit'><strong>"+l.getTitulo()+"</strong></p>"
 								+"<p style='margin:0px;' class='tit'>"+l.getDescripcion()+"</p>"
 								+"<p style='margin:0px;' class='dev'>Desarrollador: "+l.getDesarrollador()+"</p>"

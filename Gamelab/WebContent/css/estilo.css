@@ -428,17 +428,7 @@ Login*/
 }
 /*------------------------------------------------------------------
 [ Button ]*/
-.container-login100-form-btn {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.login100-form-btn {
+.loginBtnSubmit {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -447,16 +437,15 @@ Login*/
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 30%;
+  margin-top: 10px;
+  width: 40%;
   height: 60px;
   background-color: #333333;
   border-radius: 10px;
-
-   font-size: 16px;
+  font-size: 16px;
   color: #fff;
   line-height: 1.2;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -465,30 +454,13 @@ Login*/
   z-index: 1;
 }
 
-.login100-form-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  top: 0;
-  left: 0;
-  background: #a64bf4;
+.loginBtnSubmit:hover {
+  cursor: pointer;
+   background: #a64bf4;
   background: -webkit-linear-gradient(45deg, #4c2827, #f20804);
   background: -o-linear-gradient(45deg, #4c2827, #f20804);
   background: -moz-linear-gradient(45deg, #4c2827, #f20804);
   background: linear-gradient(45deg, #4c2827, #f20804);
-  opacity: 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.login100-form-btn:hover:before {
-  opacity: 1;
 }
 .txt2{
   width: 100%;
@@ -970,3 +942,58 @@ Mi Cuenta*/
 .btnCuenta:hover{
   font-size: 20px;
 }
+
+/*------------------------------------------------------------------
+------------------------------------------------------------------
+Nosotros*/
+.mainNosotros{
+  margin-left: 1.5%;
+  width: 97%;
+  text-align: center;
+  display:grid;
+  grid-gap: 10px; 
+  grid-template-areas:'headNosotros headNosotros headNosotros headNosotros'
+                      'sandra aura erick armando';
+}
+
+.mainNosotros p{
+	color:grey;
+}
+
+.headNosotros{
+  grid-area: headNosotros;
+}
+.sandra{
+  grid-area: sandra;
+}
+.aura{
+  grid-area: aura;
+}
+.erick{
+  grid-area: erick;
+}
+.armando{
+  grid-area: armando
+}
+.imgnosotros{
+  width: 200px;
+
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainNosotros {
+      display:grid; 
+      grid-template-areas:'headNosotros headNosotros' 
+                          'sandra aura' 
+                          'erick armando';
+  }
+  .imgnosotros{
+  width: 150px;
+ 
+}
+
+
+
+
+

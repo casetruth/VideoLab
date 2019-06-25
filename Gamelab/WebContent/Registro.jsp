@@ -43,9 +43,9 @@
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>DiseÃ±ado por <a
-							href="https://www.color-hex.com/color-palette/2280"
-							target="_blank">GameLab</a>
+						<small>GameLab 2019</small> <span>Acerca de nosotros <a
+							href="Nosotros.jsp"
+							target="_blank">Nosotros</a>
 						</span>
 					<ul>
 						<li><a href="https://www.facebook.com/" target="_blank"><i
@@ -63,16 +63,16 @@
 		<main>
 		<div id=main>
 
-			<h1>Registrate!</h1>
+			<h1>Regístrate!</h1>
 
 
 			<form action="/my-handling-form-page" method="post">
 				<div class="wrapTexto">
-					<span class="texto"> Usario: </span>
+					<span class="texto"> Usuario: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="user" placeholder=" Ej: Gamer22" pattern="[A-Za-z0-9]{2,40}"
+					<input style='color:black'class="inputSuscripcion" type="text" id="user" placeholder="Usuario" pattern="[A-Za-z0-9]{2,40}"
        						title="Solo se admiten letras y numeros. Min: 2 Max: 40 caracteres" required/>
        				<span class="focusInputSuscripcion"></span>
 				</div>
@@ -81,7 +81,7 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="nombre" placeholder=" Ej: Erick"
+					<input style='color:black'class="inputSuscripcion" type="text" id="nombre" placeholder="Nombre"
 					pattern="[a-zA-ZÃ Ã¡Ã¢Ã¤Ã£Ã¥ÄÄÄÄÃ¨Ã©ÃªÃ«ÄÄ¯Ã¬Ã­Ã®Ã¯ÅÅÃ²Ã³Ã´Ã¶ÃµÃ¸Ã¹ÃºÃ»Ã¼Å³Å«Ã¿Ã½Å¼ÅºÃ±Ã§ÄÅ¡Å¾ÃÃÃÃÃÃÄÄÄÄÄÃÃÃÃÃÃÃÃÄ®ÅÅÃÃÃÃÃÃÃÃÃÃÅ²ÅªÅ¸ÃÅ»Å¹ÃÃÃÅÃÄÅ Å½âÃ° ,.'-]{2,40}" 
 					required/>
 					<span class="focusInputSuscripcion"></span>
@@ -91,7 +91,7 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="apellidos" placeholder=" Ej: Fernandez"
+					<input style='color:black'class="inputSuscripcion" type="text" id="apellidos" placeholder="Apellidos"
 					pattern="[a-zA-ZÃ Ã¡Ã¢Ã¤Ã£Ã¥ÄÄÄÄÃ¨Ã©ÃªÃ«ÄÄ¯Ã¬Ã­Ã®Ã¯ÅÅÃ²Ã³Ã´Ã¶ÃµÃ¸Ã¹ÃºÃ»Ã¼Å³Å«Ã¿Ã½Å¼ÅºÃ±Ã§ÄÅ¡Å¾ÃÃÃÃÃÃÄÄÄÄÄÃÃÃÃÃÃÃÃÄ®ÅÅÃÃÃÃÃÃÃÃÃÃÅ²ÅªÅ¸ÃÅ»Å¹ÃÃÃÅÃÄÅ Å½âÃ° ,.'-]{2,64}"
 					required/>
 					<span class="focusInputSuscripcion"></span>
@@ -101,7 +101,7 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="email" id="email" placeholder=" Erik.gamelab@gmail.com"
+					<input style='color:black'class="inputSuscripcion" type="email" id="email" placeholder="nombre@email.com"
 					pattern="^[a-zA-Z0-9.!#$%&â*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$.{3,40}" maxlength="40" required />
 					<span class="focusInputSuscripcion"></span>
 				</div>
@@ -110,7 +110,7 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="domicilio" placeholder="Calle Mario Bros Cars 21, 5D"
+					<input style='color:black'class="inputSuscripcion" type="text" id="domicilio" placeholder="Dirección"
 					pattern="[a-zA-ZÃ Ã¡Ã¢Ã¤Ã£Ã¥ÄÄÄÄÃ¨Ã©ÃªÃ«ÄÄ¯Ã¬Ã­Ã®Ã¯ÅÅÃ²Ã³Ã´Ã¶ÃµÃ¸Ã¹ÃºÃ»Ã¼Å³Å«Ã¿Ã½Å¼ÅºÃ±Ã§ÄÅ¡Å¾ÃÃÃÃÃÃÄÄÄÄÄÃÃÃÃÃÃÃÃÄ®ÅÅÃÃÃÃÃÃÃÃÃÃÅ²ÅªÅ¸ÃÅ»Å¹ÃÃÃÅÃÄÅ Å½âÃ° /,.'-]{2,64}" required />
 					<span class="focusInputSuscripcion"></span>
 				</div>
@@ -119,25 +119,25 @@
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="number" id="edad" /> <span
+					<input style='color:black'class="inputSuscripcion" type="number" id="edad" /> <span
 						class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
-					<span class="texto"> ContraseÃ±a: </span>
+					<span class="texto"> Contraseña: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="contraseÃ±a" placeholder=" ContraseÃ±a" pattern= "[A-Za-z0-9!?.-_]{4,12}"
-        					title="MÃ­n: 4 caracteres y se pueden usar !?.-_" required/>
+					<input style='color:black'class="inputSuscripcion" type="text" id="contraseña" placeholder="Contraseña" pattern= "[A-Za-z0-9!?.-_]{4,12}"
+        					title="Minimo 4 caracteres y se pueden usar !?.-_" required/>
         			<span class="focusInputSuscripcion"></span>
 				</div>
 				<div class="wrapTexto">
-					<span class="texto"> Confirmar contraseÃ±a: </span>
+					<span class="texto"> Confirmar contraseña: </span>
 				</div>
 				<div class="wrapInput">
 
-					<input class="inputSuscripcion" type="text" id="confirmar" placeholder=" Repita su contraseÃ±a" pattern= "[A-Za-z0-9!?.-_]{4,12}"
-        					title="MÃ­n: 4 caracteres y se pueden usar !?.-_" required/> <span
+					<input style='color:black'class="inputSuscripcion" type="text" id="confirmar" placeholder="Repita constraseña" pattern= "[A-Za-z0-9!?.-_]{4,12}"
+        					title="Minimo 4 caracteres y se pueden usar !?.-_" required/> <span
 						class="focusInputSuscripcion"></span>
 				</div>
 				<div class="button">

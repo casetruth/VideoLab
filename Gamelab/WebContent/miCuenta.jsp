@@ -42,9 +42,9 @@
 
 				<div class="footer">
 					<p>
-						<small>GameLab 2019</small> <span>Dise?ado por <a
-							href="https://www.color-hex.com/color-palette/2280"
-							target="_blank">GameLab</a>
+						<small>GameLab 2019</small> <span>Acerca de nosotros <a
+							href="Nosotros.jsp"
+							target="_blank">Nosotros</a>
 						</span>
 					<ul>
 						<li><a href="https://www.facebook.com/" target="_blank"><i
