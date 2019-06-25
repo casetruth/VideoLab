@@ -7,9 +7,10 @@
 <title>Mi cuenta</title>
 <link href="img/logo.png" rel="icon" />
 <script src="js/script.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
+<body  onload="buscarUsr();">
 	<div id="page">
 		<header>
 			<aside id="menuLado" role="complementary"
@@ -70,43 +71,37 @@
 					<input type="image" name="imagen" class="avatar" src="img/avatar_m.jpg"/>
 				</div>
 
-				<div class="infoCuenta">	
-					<div class="wrapTexto">
-					<span class="texto">Nombre: </span>
-					</div>
-					<input type="text" name="nombre"/>
+				<div class="datosUsr"></div>
+				
+				
+				<h1>CONTRASEÑA</h1>
+
+					<label for="radioCambiarContrasenia" class="texto" value="">Cambiar Contraseña</label>
+					<label for="radioCambiarContraseniaSi">Si</label>
+					<input type="radio" id="radioCambiarContraseniaSi" name="radioCambiarContrasenia" value="Si" onchange="onChangeRadioCambiarContrasenia();">
+					<label for="radioCambiarContraseniaNo">No</label>
+					<input type="radio" id="radioCambiarContraseniaNo" name="radioCambiarContrasenia" value="No" checked="true"onchange="onChangeRadioCambiarContrasenia();">
 					<br>
-					<div class="wrapTexto">
-					<span class="texto">Apellidos: </span>
-					</div>
-					<input type="text" name="apellidos"/>
-					<br>
-					<div class="wrapTexto">
-					<span class="texto">email: </span>
-					</div>
-					<input type="text" name="email"/>
-					<br>
-					<div class="wrapTexto">
-					<span class="texto">Usario: </span>
-					</div>
-					<input type="text" name="usuario"/>
-					<br>
-					<input type="submit" class="btnCuenta" value="Guardar cambios" />
-					<h1>CONTRASEÑA</h1>
-					<div class="wrapTexto">
-					<span class="texto">Nueva Contraseña: </span>
-					</div>
-         			<input type="password" name="nuevacontraseña" />
-         			<br>
-         			<div class="wrapTexto">
-					<span class="texto">Confirmar Contraseña: </span>
-					</div>
-         			<input type="password" name="nuevacontraseña" />
-         			<br>
-         			<input type="submit" class="btnCuenta" value="Guardar cambios" />
-         			<br>
-         			<input type="submit" class="btnCuenta" value="BORRAR CUENTA" />
-         		</div>
+					<div id="cambiarContrasenia" style='display: none;align-items: center;'>
+						
+						<label for="passContraseniaAnterior" class="label" value="">Contraseña anterior</label>
+						<br>
+						<input type="password" id="passContraseniaAnterior"name="passContraseniaAnterior" class="password">
+						<br>
+						
+						<label for="passContraseniaNueva" class="label" value="">Contraseña nueva</label>
+						<br>
+						<input type="password" id="passContraseniaNueva"name="passContraseniaNueva" class="password">
+						<br>
+						
+						<label for="passContraseniaNuevaRepita" class="label" value="">Repetir contraseña nueva</label>
+						<br>
+						<input type="password" id="passContraseniaNuevaRepita"name="passContraseniaNuevaRepita" class="password">
+						<br>
+						<input style='margin-left: 60%;' type="submit" value="Guardar Cambios" class="btnCuenta">
+					</div>	
+					
+         		
          	</div>
         	</form>
          	

@@ -7,7 +7,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
-import model.*;
+import model.Libreria;
+import model.Usuario;
 
 public class Logic {
 	EntityManagerFactory factoria =  Persistence.createEntityManagerFactory("gamelab");  //
@@ -34,6 +35,16 @@ public class Logic {
 			TypedQuery<Libreria> query = em.createNamedQuery("Libreria.findAll", Libreria.class);
 			List<Libreria> Librerias = query.getResultList();
 			return Librerias;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+	
+	public List<Usuario> buscadorUsr() {
+		try {
+			TypedQuery<Usuario> query = em.createNamedQuery("Usuario.findAll", Usuario.class);
+			List<Usuario> user = query.getResultList();
+			return user;
 		} catch (Exception e) {
 			return null;
 		}

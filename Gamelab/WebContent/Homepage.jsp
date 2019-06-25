@@ -70,6 +70,7 @@
 			<div class="mainHome">
 				<div class="headHome">
 					<h2>Qué es GameLab?</h2>
+					<img src="img/logo.png">
 					<p>
 						GAMELAB es el trabajo de un grupo de estudiantes de la formación
 						"Desarrollo Web Java" que se ha unido gracias a la Fundación
@@ -78,39 +79,47 @@
 						de videojuegos online para PC. <strong>Videojuegos</strong>
 					</p>
 				</div>
+				<div class="carrusel">
+					<h2>Destacados y Recomendados</h2>
+				<section>
+                <input type="radio" name="slider-select-element" id="element1" checked="checked" src="img/logo.png"/>
+                <input type="radio" name="slider-select-element" id="element2" />
+                <input type="radio" name="slider-select-element" id="element3" />
+                
+                <div id="slider-container">
+                    <div id="slider-box">
+                        <div class="slider-element">
+                            <article class="element-red">
+                                <a href="https://store.steampowered.com/bundle/4462/ARK_Survival_Evolved_Explorers_Edition/"><img id="imgcarru"src="img/1carru.PNG"></a>
+                            </article>
+                        </div>
+                        <div class="slider-element">
+                            <article class="element-green">
+                                <a href="https://store.steampowered.com/app/1046930/Dota_Underlords/"><img id="imgcarru"src="img/2carru.PNG"></a>
+                            </article>
+                        </div>
+                        <div class="slider-element">
+                            <article class="element-blue">
+                                <a href="https://store.steampowered.com/bundle/9464/Jurassic_World_Evolution_Premium_Edition/"><img id="imgcarru"src="img/3carru.PNG"></a>
+                            </article>                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="slider-arrows">
+                    <label for="element1"></label>
+                    <label for="element2"></label>
+                    <label for="element3"></label>
+                </div>
+            	</section>          
+            	</div>
 
-				<div class="juegoSemana">
-					<h3>JUEGO DESTACADO DE LA SEMANA</h3>
-					<img id="juegoSemana" src="img/juegosemana.jpg" />
-					<p>
-						<strong>Descubre porque a nuestros jugadores les gusta
-							este videojuego</strong>
-					</p>
-				</div>
-				<div class="juegoNuevo">
-					<h3>MEJOR JUEGO NUEVO</h3>
-					<img id="juegoNuevo" src="img/juegonuevo.jpg" />
-					<p>
-						<strong>Suscribete y juega con el videjuego que
-							actualmente arrasa entre la comunidad Gammer</strong>
-					</p>
-				</div>
 
-				<div class="noticia1">
-					Noticia 1
-					<div class="feedgrabbr_widget" id="fgid_60d00bb8ab61ef8547f1535d4"></div>
-					<script>
-						if (typeof (fg_widgets) === "undefined")
-							fg_widgets = new Array();
-						fg_widgets.push("fgid_60d00bb8ab61ef8547f1535d4");
-					</script>
-					<script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
-
-				</div>
-				<div class="noticia2">
-					Noticia 2
+				
+				<div class="noticia">
+					<h2>Noticias</h2>
 					<!-- start feedwind code -->
-					<script type="text/javascript"
+					<script style='border:none'type="text/javascript"
 						src="https://feed.mikle.com/js/fw-loader.js"
 						data-fw-param="111106/"></script>
 					<!-- end feedwind code -->
