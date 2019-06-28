@@ -7,6 +7,7 @@
 <title>Login</title>
 <link href="img/logo.png" rel="icon" />
 <script src="js/script.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -93,7 +94,7 @@
 
 
 				<div>
-					<input Type="Submit" value="Login">
+					<input class="loginBtnSubmit" Type="Submit" value="Login">
 				</div>
 
 				<div>

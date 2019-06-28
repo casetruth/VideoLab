@@ -10,7 +10,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body  onload="buscarUsr();">
+<body  onload="sacarDatosUsr();">
 	<div id="page">
 		<header>
 			<aside id="menuLado" role="complementary"
@@ -67,16 +67,17 @@
 				<h1>MI CUENTA</h1>
 			<div class="gridCuenta">
 				<div class="profpic">
-					<label for="imagen">Imagen de usuario: </label>
+					
 					<input type="image" name="imagen" class="avatar" src="img/avatar_m.jpg"/>
 				</div>
-
-				<div class="datosUsr"></div>
+				<div class="infoCuenta">
+				<div id="datosUsr">	</div>
 				
 				
-				<h1>CONTRASEÑA</h1>
-
-					<label for="radioCambiarContrasenia" class="texto" value="">Cambiar Contraseña</label>
+				<h1>CAMBIAR CONTRASEÑA</h1>
+					<div class="wraptexto">
+					<label for="radioCambiarContrasenia" class="texto" value=""></label>
+					</div>
 					<label for="radioCambiarContraseniaSi">Si</label>
 					<input type="radio" id="radioCambiarContraseniaSi" name="radioCambiarContrasenia" value="Si" onchange="onChangeRadioCambiarContrasenia();">
 					<label for="radioCambiarContraseniaNo">No</label>
@@ -84,30 +85,30 @@
 					<br>
 					<div id="cambiarContrasenia" style='display: none;align-items: center;'>
 						
-						<label for="passContraseniaAnterior" class="label" value="">Contraseña anterior</label>
+						<label style='width:200px;' for="passContraseniaAnterior" class="label" value="">Contraseña anterior</label>
 						<br>
 						<input type="password" id="passContraseniaAnterior"name="passContraseniaAnterior" class="password">
 						<br>
 						
-						<label for="passContraseniaNueva" class="label" value="">Contraseña nueva</label>
+						<label style='width:200px;'for="passContraseniaNueva" class="label" value="">Contraseña nueva</label>
 						<br>
 						<input type="password" id="passContraseniaNueva"name="passContraseniaNueva" class="password">
 						<br>
 						
-						<label for="passContraseniaNuevaRepita" class="label" value="">Repetir contraseña nueva</label>
+						<label style='width:250px;'for="passContraseniaNuevaRepita" class="label" value="">Repetir contraseña nueva</label>
 						<br>
 						<input type="password" id="passContraseniaNuevaRepita"name="passContraseniaNuevaRepita" class="password">
 						<br>
 						<input style='margin-left: 60%;' type="submit" value="Guardar Cambios" class="btnCuenta">
 					</div>	
-					
+					</div>
          		
          	</div>
         	</form>
          	
         	<div class="infoSuscripcion">
          			<h2>ESTADO DE LA SUSCRIPCIÓN</h2>
-         			<a href="Suscripcion.jsp">Suscríbete!</a>
+         			<a href="Pago.jsp">Suscríbete!</a>
          			<form>
          			<h3>Suscripción:  </h3>
          			<h3>Fecha de alta:  </h3>

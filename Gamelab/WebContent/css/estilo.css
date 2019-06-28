@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  color: white;
   font-family: Lucida Console, monospaced;
   font-weight: 700;
   margin: 0 0 30px 0;
@@ -993,13 +993,14 @@ Mi Cuenta*/
   text-align: center;
 }
 .profpic{
-  width: 100%;
-  border-style: dashed;
+  width: 70%;
+  margin-left: 15%;
+  
   grid-area: profpic;
 }
 .infoCuenta{
   width: 100%;
-  border-style: dashed;
+  
   grid-area: infoCuenta;
 
 }
@@ -1009,6 +1010,18 @@ Mi Cuenta*/
   margin-top: 15px;
 }
 
+.infoCuenta p{
+	
+	margin: 0;
+}
+.infoCuenta span{
+	color:white;
+	margin: 0;
+}
+.infoCuenta label{
+	color:white;
+	margin: 0;
+}
 
 .gridCuenta{
   display:grid;
@@ -1017,7 +1030,7 @@ Mi Cuenta*/
 }
 .labelCuenta{
   width: 200px;
-  border-style: dashed;
+ 
 }
 
 .avatar{
@@ -1090,6 +1103,10 @@ Nosotros*/
   .imgnosotros{
   width: 150px;
  
+}
+
+.imgpago{
+	width:3px;
 }
 
 

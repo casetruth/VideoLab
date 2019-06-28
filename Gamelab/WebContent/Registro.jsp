@@ -141,7 +141,7 @@
 						class="focusInputSuscripcion"></span>
 				</div>
 				<div class="button">
-					<button type="submit" class="login100-form-btn">Enviar</button>
+					<button type="submit" class="loginBtnSubmit" >Enviar</button>
 				</div>
 			</form>
 		</div>

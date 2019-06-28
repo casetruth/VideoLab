@@ -24,20 +24,20 @@
 
             </div>
             <div>
-                <label for="titular">Nombre del titular</label>
+                <label style='width:200px;'for="titular">Nombre del titular</label>
                 <input type="text" id="titular" placeholder="Como aparece en la tarjeta" pattern="[A-Za-z0-9]{2,40}" required>
             </div>
             <div>
-                <label for="numeroTarjeta">Numero de tarjeta</label>
+                <label style='width:200px;'for="numeroTarjeta">Numero de tarjeta</label>
                 <input type="number" id="numeroTarjeta" pattern="[0-9]{40}" required>
             </div>
             <div>
-                <label for="cvv">Código de seguridad</label>
+                <label style='width:200px;'for="cvv">Código de seguridad</label>
                 <input type="number" id="cvv" placeholder="CVV" pattern="[0-9]{3}" title="3 dígitos" required>
             </div>
             
             <div>
-                <label>Fecha de expiración</label>
+                <label style='width:200px;'>Fecha de expiración</label>
                 <select>
                     <option value="01">Enero</option>
                     <option value="02">Febrero </option>
@@ -64,16 +64,16 @@
   
 
             <div>
-            	<label for="fp">Elige forma de pago</label>
+            	<label style='width:150px;' for="fp">Elige forma de pago</label>
 				<input type="radio"name="tarjeta" value="V">
-					<img src="img/visa.png" id="imgpago">
+					<img style='width:40px;' src="img/visa.png" class="imgpago">
 				<input type="radio"name="tarjeta" value="M">
-				 	<img src="img/mastercard.png" id="imgpago">
+				 	<img style='width:40px;' src="img/mastercard.png" class="imgpago">
 				<input type="radio" name="tarjeta"value="P"> 
-                	<img src="img/paypal.png" id="imgpago">
+                	<img style='width:40px;' src="img/paypal.png" class="imgpago">
             </div>
             <div>
-                <button type="submit" class="btn btn-default" id="confirm-purchase">Confirmar</button>
+                <button class="loginBtnSubmit" type="submit" class="btn btn-default" id="confirm-purchase">Confirmar</button>
             </div>
         </form>
     </div>

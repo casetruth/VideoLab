@@ -24,7 +24,6 @@ function buscar() {
 
 function sacarDatosUsr() {     
     var xhr = new XMLHttpRequest();
-
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200)
@@ -37,7 +36,7 @@ function sacarDatosUsr() {
     var url = "MiCuentaServlet";
     
     // Petición Ajax
-    xhr.open("GET", "MiCuentaServlet");
+    xhr.open("GET", url);
     xhr.send();
     
 }

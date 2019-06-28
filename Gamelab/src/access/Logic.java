@@ -46,6 +46,7 @@ public class Logic {
 			List<Usuario> user = query.getResultList();
 			return user;
 		} catch (Exception e) {
+			System.out.println(e.toString());
 			return null;
 		}
 	}
